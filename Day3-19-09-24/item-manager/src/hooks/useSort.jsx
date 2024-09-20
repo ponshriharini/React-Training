@@ -6,7 +6,7 @@ const useSort = (items) => {
     const [sortDirection, setSortDirection] = useState('asc');
 
     const sortedItems = [...items].sort((a, b) => {
-        if (!sortColumn) return 0; // No sorting if no column selected
+        if (!sortColumn) return 0; 
 
         if (sortDirection === 'asc') {
             return a[sortColumn] > b[sortColumn] ? 1 : -1;
