@@ -1,0 +1,30 @@
+.add-items-div {
+    padding: 20px; 
+    display: flex; 
+    justify-content: center; 
+}
+
+.form-row {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.col {
+    margin-right: 10px; 
+}
+
+.form-control {
+    width: 500px; 
+    font-size: 16px; 
+}
+
+.button-div {
+    display: flex; 
+    justify-content: center; 
+}
+
+.btn {
+    width: 150px; 
+    font-size: 16px; 
+}

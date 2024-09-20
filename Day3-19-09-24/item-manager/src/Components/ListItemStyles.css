@@ -1,0 +1,22 @@
+.items-table{
+    margin: auto;
+}
+
+td, th{
+    margin: 2%;
+}
+
+.item-header{
+    display: flex;
+    justify-content: center;
+}
+
+.icon{
+    margin: 8px 4px !important;
+    cursor: pointer;
+    color: rgb(156, 155, 155);
+}
+
+h4{
+    margin-right: 10px;
+}
