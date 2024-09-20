@@ -8,6 +8,16 @@ import React from 'react';
   }
   
   export default SetupTests;
+  import React from 'react';
+  
+  const SetupTests = () =>  {
+	return (
+	  <div>
+	  </div>
+	);
+  }
+  
+  export default SetupTests;
   // jest-dom adds custom jest matchers for asserting on DOM nodes.
 // allows you to do things like:
 // expect(element).toHaveTextContent(/react/i)

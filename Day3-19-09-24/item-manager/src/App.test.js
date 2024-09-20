@@ -1,4 +1,14 @@
 import React from 'react';
+  
+  const App.test = () =>  {
+	return (
+	  <div>
+	  </div>
+	);
+  }
+  
+  export default App.test;
+  import React from 'react';
   import { render, screen } from '@testing-library/react';
 import App from './App';
 

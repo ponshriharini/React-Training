@@ -1,4 +1,14 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
+  
+  const App = () =>  {
+	return (
+	  <div>
+	  </div>
+	);
+  }
+  
+  export default App;
+  import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './App.css';
 import ItemComponent from './Components/ItemComponent';

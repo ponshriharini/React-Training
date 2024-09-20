@@ -1,4 +1,14 @@
-import logo from './logo.svg';
+import React from 'react';
+  
+  const App = () =>  {
+	return (
+	  <div>
+	  </div>
+	);
+  }
+  
+  export default App;
+  import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
