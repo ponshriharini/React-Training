@@ -1,5 +1,6 @@
 .Shipment-Tracking-main-Container {
     display: flex;
+    flex-wrap: wrap;
     padding: 20px;
 }
 
@@ -115,3 +116,4 @@ h3{
     visibility: visible;
     opacity: 1;
 }
+
