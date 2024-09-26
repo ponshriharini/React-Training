@@ -9,7 +9,6 @@
     border-radius: 16px;
     height: 100px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.1);
 }
@@ -52,7 +51,6 @@
 
 .enter{
     width: 12%;
-    margin-right: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,8 +60,8 @@
     border-bottom-right-radius: 16px;
     height: 70px;
     border-bottom: 3px solid gray !important;
-    margin-left: 10px;
-    padding: 0px 15px !important;
+    margin: 0px 15px 0px 10px;
+    padding: 0px 25px 0px 15px !important;
 }
 
 .tracking-options.active, .tracking-options:hover {
@@ -71,4 +69,28 @@
     font-weight: bold; 
     color: white;
     border-radius: 10px;
+}
+
+@media screen and (max-width:750px) {
+    .input-div{
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .tracking{
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        border-bottom-left-radius: 0px;
+        flex: 100%
+    }
+
+    .tracking-options{
+        flex: 40%;
+    }
+
+    .form-input{
+        margin: 20px;
+        flex: 70%;
+    }
+    
 }

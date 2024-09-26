@@ -3,12 +3,13 @@ import { TrackingContext } from '../Context/TrackingContext';
 import "../Styles/TrackingStyles.css";
 
 function ShipmentTracking() {
-    const { trackingInput, setSearchHistory, SearchHistory } = useContext(TrackingContext);
+    const { trackingType, trackingInput, setSearchHistory, SearchHistory } = useContext(TrackingContext);
     const [shipment, setShipment] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
     useEffect(() => {
+        console.log();
         const fetchShipmentData = async () => {
             try {
                 const response = await fetch("http://localhost:8000/Shipments");
@@ -19,7 +20,10 @@ function ShipmentTracking() {
 
                 const foundShipment = data.find(item => {
                     if (trackingInput.value) {
-                        return (trackingInput.value === item.AWBNumber) || (trackingInput.value === item.shipmentId);
+                        if(trackingType === "AWB")
+                            return (trackingInput.value === item.AWBNumber);
+                        else if(trackingType === "Order")
+                            return (trackingInput.value === item.shipmentId);
                     }
                     return false;
                 });
@@ -35,7 +39,7 @@ function ShipmentTracking() {
         if (trackingInput.value) {
             fetchShipmentData();
         }
-    }, [trackingInput.value]);
+    }, [trackingInput]);
 
     useEffect(() => {
         if (trackingInput.value && shipment) {
@@ -53,7 +57,7 @@ function ShipmentTracking() {
 
             setSearchHistory({ History: updatedSearchHistory });
         }
-    }, [trackingInput.value, shipment]);
+    }, [trackingInput, shipment]);
 
     if (!trackingInput.value) return <div></div>;
     if (!shipment) return <div className='mt-3 alert alert-light'>No Data found</div>;

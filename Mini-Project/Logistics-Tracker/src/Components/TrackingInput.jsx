@@ -18,11 +18,7 @@ function TrackingInput() {
     };
 
     const handleSubmit = () => {
-        if (trackingType === "AWB") {
-            setTrackingInput({ value: inputValue });
-        } else {
-            setTrackingInput({ value: inputValue });
-        }
+        setTrackingInput({ value: inputValue });
         setInputValue(""); 
     };
 

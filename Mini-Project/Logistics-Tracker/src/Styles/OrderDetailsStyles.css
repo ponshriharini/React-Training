@@ -15,7 +15,7 @@
     background-color: rgb(245,130,32);
     color: white;
     width: 150px;
-    margin: 0px 10px;
+    margin: 5px 10px;
     padding: 5px;
 }
 
@@ -32,6 +32,7 @@
 .Order-Details-Card{
     flex: 80%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .Order-Details:hover{

@@ -5,6 +5,7 @@
 }
 
 .Tracking-Container, .Logistics-Details-Container {
+    min-width: 450px;
     flex: 1; 
     border: 1px solid #ccc;
     padding: 10px;
@@ -117,3 +118,8 @@ h3{
     opacity: 1;
 }
 
+@media screen and (max-width: 980px) {
+    .Logistics-Details-Container{
+        margin-top: 20px;
+    }
+}
