@@ -1,0 +1,248 @@
+{
+    "Shipments": [
+        {
+            "shipmentId": "SH123456",
+            "AWBNumber": "AWB123456789",
+            "status": "In Transit",
+            "origin": {
+                "address": "123 Main St, Springfield, IL, 62701",
+                "latitude": 39.7817,
+                "longitude": -89.6501
+            },
+            "destination": {
+                "address": "456 Elm St, Capital City, IL, 62702",
+                "latitude": 39.7817,
+                "longitude": -89.6501
+            },
+            "carrier": {
+                "name": "Fast Logistics Co.",
+                "trackingNumber": "FL987654321",
+                "contact": {
+                    "phone": "+1-800-555-0199",
+                    "email": "support@fastlogistics.com"
+                }
+            },
+            "estimatedDelivery": "2024-09-30T14:00:00Z",
+            "currentLocation": {
+                "address": "789 Maple Ave, Chicago, IL, 60601",
+                "latitude": 41.8781,
+                "longitude": -87.6298,
+                "timestamp": "2024-09-24T10:30:00Z"
+            },
+            "trackingUpdates": [
+                {
+                    "timestamp": "2024-09-23T08:00:00Z",
+                    "location": "Warehouse, Springfield, IL",
+                    "status": "Package picked up"
+                },
+                {
+                    "timestamp": "2024-09-24T09:00:00Z",
+                    "location": "Distribution Center, Chicago, IL",
+                    "status": "Package sorted for delivery"
+                },
+                {
+                    "timestamp": "2024-09-24T10:30:00Z",
+                    "location": "Current location, Chicago, IL",
+                    "status": "In transit to destination"
+                }
+            ],
+            "items": [
+                {
+                    "itemId": "ITEM001",
+                    "description": "Electronics",
+                    "quantity": 2,
+                    "weight": "1.5 kg"
+                },
+                {
+                    "itemId": "ITEM002",
+                    "description": "Books",
+                    "quantity": 5,
+                    "weight": "2 kg"
+                }
+            ],
+            "notifications": [
+                {
+                    "type": "info",
+                    "message": "Your package is on the way!",
+                    "timestamp": "2024-09-24T10:00:00Z"
+                },
+                {
+                    "type": "alert",
+                    "message": "Delay due to weather conditions.",
+                    "timestamp": "2024-09-24T10:15:00Z"
+                }
+            ]
+        },
+        {
+            "shipmentId": "SH123457",
+            "AWBNumber": "AWB123456790",
+            "status": "Delivered",
+            "origin": {
+                "address": "321 North St, Lincoln, IL, 62656",
+                "latitude": 40.6095,
+                "longitude": -96.7071
+            },
+            "destination": {
+                "address": "654 South St, Decatur, IL, 62523",
+                "latitude": 39.8404,
+                "longitude": -88.9543
+            },
+            "carrier": {
+                "name": "QuickShip Services",
+                "trackingNumber": "QS987654322",
+                "contact": {
+                    "phone": "+1-800-555-0198",
+                    "email": "support@quickship.com"
+                }
+            },
+            "estimatedDelivery": "2024-09-25T10:00:00Z",
+            "currentLocation": {
+                "address": "Delivered to customer",
+                "latitude": null,
+                "longitude": null,
+                "timestamp": "2024-09-24T14:00:00Z"
+            },
+            "trackingUpdates": [
+                {
+                    "timestamp": "2024-09-22T08:00:00Z",
+                    "location": "Warehouse, Lincoln, IL",
+                    "status": "Package picked up"
+                },
+                {
+                    "timestamp": "2024-09-23T12:00:00Z",
+                    "location": "Transit, Central IL",
+                    "status": "In transit"
+                },
+                {
+                    "timestamp": "2024-09-24T14:00:00Z",
+                    "location": "654 South St, Decatur, IL, 62523",
+                    "status": "Package delivered"
+                }
+            ],
+            "items": [
+                {
+                    "itemId": "ITEM003",
+                    "description": "Clothing",
+                    "quantity": 3,
+                    "weight": "1 kg"
+                },
+                {
+                    "itemId": "ITEM004",
+                    "description": "Shoes",
+                    "quantity": 1,
+                    "weight": "1.2 kg"
+                }
+            ],
+            "notifications": [
+                {
+                    "type": "info",
+                    "message": "Your package has been delivered.",
+                    "timestamp": "2024-09-24T14:05:00Z"
+                }
+            ]
+        },
+        {
+            "shipmentId": "SH123458",
+            "AWBNumber": "AWB123456791",
+            "status": "In Transit",
+            "origin": {
+                "address": "456 Oak St, Peoria, IL, 61603",
+                "latitude": 40.6936,
+                "longitude": -89.5889
+            },
+            "destination": {
+                "address": "789 Pine St, Champaign, IL, 61820",
+                "latitude": 40.1164,
+                "longitude": -88.2434
+            },
+            "carrier": {
+                "name": "Swift Delivery Inc.",
+                "trackingNumber": "SD987654323",
+                "contact": {
+                    "phone": "+1-800-555-0197",
+                    "email": "support@swiftdelivery.com"
+                }
+            },
+            "estimatedDelivery": "2024-09-29T09:00:00Z",
+            "currentLocation": {
+                "address": "In transit, Springfield, IL",
+                "latitude": 39.7817,
+                "longitude": -89.6501,
+                "timestamp": "2024-09-24T12:00:00Z"
+            },
+            "trackingUpdates": [
+                {
+                    "timestamp": "2024-09-23T10:00:00Z",
+                    "location": "Warehouse, Peoria, IL",
+                    "status": "Package picked up"
+                },
+                {
+                    "timestamp": "2024-09-24T11:00:00Z",
+                    "location": "Transit, Springfield, IL",
+                    "status": "In transit"
+                }
+            ],
+            "items": [
+                {
+                    "itemId": "ITEM005",
+                    "description": "Home Appliances",
+                    "quantity": 1,
+                    "weight": "3 kg"
+                }
+            ],
+            "notifications": [
+                {
+                    "type": "info",
+                    "message": "Your package is currently in transit.",
+                    "timestamp": "2024-09-24T12:05:00Z"
+                }
+            ]
+        },
+        {
+            "shipmentId": "SH123459",
+            "AWBNumber": "AWB123456792",
+            "status": "Pending",
+            "origin": {
+                "address": "555 Cedar St, Urbana, IL, 61801",
+                "latitude": 40.1106,
+                "longitude": -88.2073
+            },
+            "destination": {
+                "address": "888 Birch St, Bloomington, IL, 61701",
+                "latitude": 40.4842,
+                "longitude": -88.9939
+            },
+            "carrier": {
+                "name": "LogiPack Express",
+                "trackingNumber": "LP987654324",
+                "contact": {
+                    "phone": "+1-800-555-0196",
+                    "email": "support@logipack.com"
+                }
+            },
+            "estimatedDelivery": "2024-09-30T16:00:00Z",
+            "currentLocation": {
+                "address": "Pending pickup",
+                "latitude": null,
+                "longitude": null,
+                "timestamp": "2024-09-24T09:00:00Z"
+            },
+            "trackingUpdates": [],
+            "items": [
+                {
+                    "itemId": "ITEM006",
+                    "description": "Furniture",
+                    "quantity": 1,
+                    "weight": "25 kg"
+                }
+            ],
+            "notifications": [
+                {
+                    "type": "info",
+                    "message": "Your package is scheduled for pickup soon.",
+                    "timestamp": "2024-09-24T09:10:00Z"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+header{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.menu-nav{
+    width: 500px;
+}
+
+.menu-head{
+    text-decoration: underline;
+    text-decoration-color: #FFBA43;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 7px;
+}
+
+.menu-nav{
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.menu-nav *{
+    margin-top: 10px;
+    padding: 5px 20px;
+}
+
+.breakfast{
+    background-color: #3BB67E;
+    color: white;
+    border-radius: 5px;
+}

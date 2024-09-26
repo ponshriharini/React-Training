@@ -1,0 +1,39 @@
+.Order-Details-Container{
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.1);
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 30px auto 0px auto;
+    border-radius: 16px;
+}
+
+.Order-Details{
+    border-radius: 10px;
+    background-color: rgb(245,130,32);
+    color: white;
+    width: 150px;
+    margin: 0px 10px;
+    padding: 5px;
+}
+
+.Order-Details-Header *{
+    margin: 0px;
+}
+
+.Order-Details-Header{
+    flex: 20%;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.Order-Details-Card{
+    flex: 80%;
+    display: flex;
+}
+
+.Order-Details:hover{
+    cursor: pointer;
+}
