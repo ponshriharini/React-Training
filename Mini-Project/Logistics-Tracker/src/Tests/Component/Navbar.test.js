@@ -21,6 +21,5 @@ describe('NavBar Component', () => {
     render(<NavBar />);
     const buttonElement = screen.getByRole('button', { name: /Track Shipment/i });
     fireEvent.click(buttonElement);
-    // No assertion needed, just ensuring no errors occur on click
   });
 });
